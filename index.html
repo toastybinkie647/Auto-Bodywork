@@ -1,12 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Auto Bodywork</title>
-	<link href="style.css" rel="style">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 	<!--This is a external stylesheet that allows me to use icons without using imgs, this speeds up load times. -->
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -16,7 +16,9 @@
 				<i class="bx bxs-car-garage"></i>
 				<span>Auto Bodywork</span>
 			</div>
-			<i class="bx bx-menu"></i>
+			<div class="menu-toggle" onclick="toggleSidebar()">
+			<i class="bx bx-menu" id="sidebarButton"></i>
+			</div>
         </div>
 		<ul>
 			<li>
@@ -63,5 +65,13 @@
 			</li>
 		</ul>
     </div>
+	
+	<div class="maincontent">
+		<div class="autobodyTitle">
+			<h1>Auto Bodywork</h1>
+		</div>
+	</div>
+	
 </body>
+	
 </html>
