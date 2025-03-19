@@ -71,9 +71,10 @@ li {
 }
 
 .sidebar ul li{
-	position: inherit;
+	position: relative;
 	list-style-type: none;
 	height: 3rem;
+	right: 28%;
 	width: 90%;
 	margin: 0.8rem auto;
 	line-height: 50px;
