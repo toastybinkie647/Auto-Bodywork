@@ -7,9 +7,21 @@
 	<script src="script.js"></script>
 	<!--This is a external stylesheet that allows me to use icons without using imgs, this speeds up load times. -->
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+	
+<div class="page-title">
+	<h1> Automovtive Bodywork</h1>
+</div>
+	
+<div class="backdrop-image">
+    <div class="gradient-overlay"></div>
+</div>
+
+
+	
 <div class="sidebar">
 	  	<div class="top">
 		  	<div class="logo">
@@ -66,6 +78,51 @@
 		</div>
 	</div>
 	
-</body>
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to the Info Slider</h2>
+            <p>Use the arrows to navigate through the slides below.</p>
+            <div class="slider-wrapper">
+                <button class="btn" onclick="prevSlide()">
+                    <div class="arrow left-arrow"></div>
+                </button>
+                <div class="slider-container">
+                    <div class="slides" id="slides">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2>STAGE 1</h2>
+                                <p>This is some detailed information about topic 1.
+								This is some detailed information about topic 1.
+								This is some detailed information about topic 1.
+								This is some detailed information about topic 1.This is some detailed information about topic 1.This is some detailed information about topic 1.</p>
+                                <button>Learn More</button>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2>Slide 2</h2>
+                                <p>More content here about another subject.</p>
+                                <button>Learn More</button>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2>Slide 3</h2>
+                                <p>Final slide with additional details.</p>
+                                <button>Learn More</button>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" onclick="nextSlide()">
+                    <div class="arrow right-arrow"></div>
+                </button>
+            </div>
+        </div>
+    </div>
 	
+</body>
 </html>
