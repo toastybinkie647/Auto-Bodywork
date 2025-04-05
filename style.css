@@ -174,7 +174,7 @@ h2 {
 }
 
 .container {
-	max-width: 60rem;
+	max-width: 75rem;
     margin-top: 15rem;
 	margin-bottom: auto;
 	margin-left: auto;
@@ -195,8 +195,8 @@ h2 {
 	align-items: center;
 }
 .slider-container {
-    width: 70rem;
-    height: 25rem;
+    width: 75rem;
+    height: 28rem;
     overflow: hidden;
     position: relative;
     border: 1px solid #ccc;
@@ -224,27 +224,28 @@ h2 {
     flex-wrap: wrap;
 }
 .slide img {
-    width: 55%;
-	margin-left: 1rem;
+    width: 50%;
+	margin-left:2rem;
+	margin-top: 0.5rem;
 	border-radius: 5px;
-	margin-bottom: 8rem;
 	align-self: center;
 }
 
 .slide-content {
 	flex: 1;
-	max-width: 60%;
+	max-width: 50%;
 }
+
 .slide button {
 	display: block;
-    margin-top: 5rem;
-    padding: 10px 15px;
     border: none;
     background: red;
     color: black;
-    font-size: 16px;
+    font-size: 0.9rem;
     cursor: pointer;
     border-radius: 5px;
+	margin-top: 5rem;
+	font-family: kumar one;
 }
 .slide button:hover {
 	background: darkred;
