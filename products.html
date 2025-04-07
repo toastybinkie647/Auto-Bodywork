@@ -90,8 +90,7 @@ BODYWORK</h1>
 <!--this is where the "main" or middle content is displayed, this allows me to adjust this conatiner to display a img and text-->
 <div class="main">
 	<!--main header-->
-	<h1 class="main-header"> ABOUT<br>
-AUTOMOTIVE BODYWORK</h1>
+	<h1 class="main-header"> Products </h1>
 	<!--this class allows for me to style certain things inside this, without it effecting other website components and features-->
     <div class="main-content">
 		<!--the main text-->
@@ -100,61 +99,64 @@ AUTOMOTIVE BODYWORK</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus.</p>
         </div>
 		<!--the main img with a given class that allows me to change certain dimentions if needed. has a alt tag-->
-        <img class="main-img" src="images/evo photo.jpg" alt="Photo of a white EVO.">
+        <img class="main-img" src="images/evo photo.jpg" alt="placeholder">
     </div>
 </div>
 <!--This will be the container that holds that main website feature, the slides-->
 <div class="container">
-	<h1 class="container-header">Page Previewer</h1>
-            <div class="slider-wrapper">
+	<!-- header for the slides-->
+	<h1 class="container-header">Products needed</h1>
+          <!--	this is a class that allows the buttons to be conected with the slides, although cannot be inside the container otherwise the buttons move with the slides.	-->
+          <div class="slider-wrapper">
+                <!-- the buttons that allow the user to go to the next slide, with the java tag that allows the button to function-->
                 <button class="btn" onclick="prevSlide()">
                     <div class="arrow left-arrow"></div>
                 </button>
+                <!-- the div class is white background that contains all the content that the slide with hold, this includes the header, paragraph and button of all the slides-->
                 <div class="slider-container">
                     <div class="slides" id="slides">
+						<!--this div class conatins one of the slides content, for example, stage 1. this allows us to have diffrent content based on what slide we are on-->
                         <div class="slide">
+							<!--this just displays whats inside of this slide, img and text. this gets repeated for how ever many pages the feature has.-->
                             <div class="slide-content">
-                                <h2>PRODUCTS</h2>
-                                <p> This page will guide you through everything you need to get started with respraying your car. It's important to understand the full scope of tools, equipment, and products required for the job. From surface preparation and masking to applying primer, paint, and clear coat, each step demands specific materials to ensure a smooth, professional-looking finish. In this guide, it will walk you through all the essential items you'll need throughout the entire process, helping you stay organized, safe, and confident as you take on the rewarding task of repainting your vehicle.</p>
-                                <button>Learn More</button>
+                                <h2>Equipment</h2>
+                                <p> condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus</p>
                             </div>
-                            <img src="images/products.jpg" alt="Photo of a MX5 that is sanded down and ready for first coat of paint primer">
+                            <!--this is a image, with a alt tag-->
+                            <img src="images/sandingblockimg.jpeg" alt="Photo of sanding blocks on a table">
                         </div>
                         <div class="slide">
                             <div class="slide-content">
-                                <h2>STAGE 1</h2>
-                                <p>This stage will provide a comprehensive overview of the key aspects you need to focus on before you begin sanding or painting your car. It will cover the essential preparation steps that are crucial to achieving a smooth, professional finish. By taking the time to properly prepare the car's body, you'll ensure a much easier and more efficient workflow throughout the entire process. From cleaning and inspecting the surface to addressing any imperfections and ensuring proper adhesion, this stage will guide you through each step needed to lay a strong foundation for the sanding and painting stages ahead.</p>
-								<button class="learnmore-btn">Learn More</button>
+                                <h2>Location</h2>
+                                <p>condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus</p>
                             </div>
-                            <img src="images/prep1.jpg" alt="Photo of a MX5 that is sanded down and ready for first coat of paint primer">
+                            <img src="images/locationimg.jpg" alt="Photo of a MX5 that is sanded down and ready for first coat of paint primer">
                         </div>
                         <div class="slide">
                             <div class="slide-content">
-                                <h2>STAGE 2</h2>
-                                <p>This stage will cover several important preparation steps you need to complete before painting your car. Proper preparation is essential to ensure a smooth, long-lasting finish. These tasks may include thoroughly sanding all body panels to create an even surface, repairing any dents or imperfections, and addressing any areas affected by rust to prevent further damage. Taking the time to do this prep work carefully will help the paint adhere properly and result in a more professional-looking final outcome. </p>
-                                <button>Learn More</button>
+                                <h2>Primer Paints</h2>
+                                <p>This stage will go over some preperation that you need before painting your car. this can include tasks like sanding all body panels, fixing rust and dents. </p>
                             </div>
-                            <img src="images/prep5.jpg" alt="Photo of a red boot being sanded, but with the places that had dents fully sanded down to the metal">
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
                         </div>
 						<div class="slide">
                             <div class="slide-content">
-                                <h2>STAGE 3</h2>
+                                <h2>Color Paints</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra pur</p>
-                                <button>Learn More</button>
                             </div>
-                            <img src="images/primer1.jpg" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
                         </div>
 						<div class="slide">
                             <div class="slide-content">
-                                <h2>STAGE 4</h2>
+                                <h2>Clearcoats/Finsher</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpa</p>
-                                <button>Learn More</button>
                             </div>
-                            <img src="images/paint1.jpg" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
                         </div>
 						
                     </div>
                 </div>
+                <!--the other arrow that changes the slides-->
                 <button class="btn" onclick="nextSlide()">
                     <div class="arrow right-arrow"></div>
                 </button>
