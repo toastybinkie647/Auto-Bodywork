@@ -2,6 +2,7 @@
 /* CSS Document */
 
 body{
+	/*styles the basic css for the main body, things below style certain text sepratlty.*/
 	background-color: black;
 	font-style: normal;
 	caret-color: transparent;
@@ -34,7 +35,7 @@ h2 {
 	font-family: kumar one;
 	font-weight: 50;
 }
-
+/*main styling for the navbar, colors, width etc*/
 .sidebar {
 	position: absolute;
 	top: 0;
@@ -46,16 +47,16 @@ h2 {
 	transition: all 0.5s ease;
 }
 
-
+/*this styles the menu button and calulates how wide it should be as well as centers it in the middle of the navbar*/
 .sidebar.active ~ .maincontent {
 	left: 50%;
 	width: calc(100% - 50%);
 }
-
+/*this changes the navbar size when the menu button is clicked*/
 .sidebar.active {
 	width: 15rem;
 }
-
+/*this styles the navbar buttons, adusting size,etc*/
 .sidebar #sidebarButton {
 	position: absolute;
 	color: white;
@@ -66,11 +67,11 @@ h2 {
 	cursor: pointer;	
 	
 }
-/* this changes the location of the sidebar button when active */
+/* this changes the location of the sidebar menu button when active */
 .sidebar.active #sidebarButton{
 	left: 90%;
 }
-
+/*this styles the little header that the navbar has, but makes it not visble cause we only want to see it whne the navbar is open*/
 .sidebar .top .logo {
 	color: white;
 	display: flex;
@@ -81,17 +82,18 @@ h2 {
 	opacity: 0;
  
 }
-
+/*this makes the styling above active and visable, showing the auto bodywork header as well as the small logo.*/
 .sidebar.active .top .logo {
 	opacity: 1;
 }
 
+/*this styles all the icons sizes and magins*/
 .top .logo i {
 	font-size: 2rem;
 	margin-right: 0.5rem;
 	
 }
-
+/*this does some styling on the list of links in the navbar, it positions them correctly, as well as doing sizing*/
 .sidebar ul li{
 	position: relative;
 	list-style-type: none;
@@ -102,7 +104,7 @@ h2 {
 	line-height: 50px;
 	
 }
-
+/*this styles the text coloring and position*/
 .sidebar ul li a {
 	color: white;
 	display: flex;
@@ -110,22 +112,22 @@ h2 {
 	text-decoration: none;
 	border-radius: 0.8rem;
 }
-
+/*this changes the styling of the text and icon depending if the user is hovering over the button*/
 .sidebar.active ul li a:hover {
 	background-color: white;
 	color: black;
 	
 }
-
+/*this makes the navbar items not visable as we only want the names of the buttons to appper once the navbar is open*/
 .sidebar .nav-item {
 	opacity: 0;
 	
 }
-
+/*this shows the navbar items*/
 .sidebar.active .nav-item {
 	opacity: 1;
 }
-
+/*this is the styling for the backdrop img/landing page. styles a bunch of resizing and centering things so that it looks nice*/
 .backdrop-image {
     width: 100%;
 	height: 100vh;
@@ -142,7 +144,7 @@ h2 {
 	top: 0;
 	right: 0;
 }
-
+/*this is the slight gradinent that is over the img, this darkens the photo slightly and makes it less harsh to look at */
 .gradient-overlay {	
     top: 0;
     left: 0;
@@ -157,7 +159,7 @@ h2 {
 	pointer-events: none;
 }
 
-
+/*styling for the title*/
 .title {
 	position: absolute;
 	top: 25%;
@@ -168,16 +170,17 @@ h2 {
 	pointer-events: none;
 	transition: all 0.5s ease;
 }
+/*this moves the title once the navbar is opened with some animations*/
 .title.active {
 	left: 75%;
 	transition: all 0.5s ease;
 }
-
+/*styles the titles text without impacting other h1 tags in the website*/
 .title h1{
 	color: white;
 	font-size: 3rem;
 }
-
+/*this styles the main contaner with the slide inside, this sets the baseline of how much space its allowed to take, doing it this way makes resizing for other devices much easier.*/
 .container {
 	max-width: 75rem;
     margin-top: 15rem;
@@ -187,7 +190,7 @@ h2 {
     padding: 20px;
     text-align: center;
 }
-
+/*this makes sure that the content inside the container displays correctly*/
 .content {
     display: flex;
     flex-direction: column;
@@ -195,10 +198,12 @@ h2 {
     justify-content: center;
 	padding: 20px;
 }
+/*this makes it so that the slides can be stacked next to each other, creating the effect that its sliding from side to side*/
 .slider-wrapper {
 	display: flex;
 	align-items: center;
 }
+/*this styles whats accutally inside of the wrapper, like the backdrop and sizing.*/
 .slider-container {
     width: 75rem;
     height: 28rem;
@@ -210,11 +215,12 @@ h2 {
     border-radius: 10px;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/*this just styles the animation to make it look like the slide are moving side to side*/
 .slides {
     display: flex;
 	transition: transform 0.3s ease-in-out;
 }
+/*styles whats acctually inside of each slide like text, gets the sizing and margins right for the photo aswell*/
 .slide {
 	min-width: 100%;
     box-sizing: border-box;
@@ -228,6 +234,7 @@ h2 {
     font-size: 1rem;
     flex-wrap: wrap;
 }
+/*same as above just for the photo*/
 .slide img {
     width: 50%;
 	margin-left:2rem;
@@ -236,12 +243,12 @@ h2 {
 	align-self: center;
 }
 
-
+/*this limits the text specifically, so that i can limit how far the text can go to the right*/
 .slide-content {
 	flex: 1;
 	max-width: 50%;
 }
-
+/*does the same as before just for the button*/
 .slide button {
 	display: block;
     border: none;
@@ -253,9 +260,11 @@ h2 {
 	margin-top: 5rem;
 	font-family: kumar one;
 }
+/*this makes it so that if i hover over the button it changes into a darker hue*/
 .slide button:hover {
 	background: darkred;
 }
+/*this styles the arrow buttons on the side of the conatiner */
 button {
 	cursor: pointer;
 	color: red;
@@ -266,12 +275,14 @@ button {
 	font-size: 30px;
 	transition: color 0.3s;
 }
+/*this sets some basic styling and postioning for the buttons*/
 .arrow {
 	display: inline-block;
 	width: 0;
 	height: 0;
 	border-style: solid;
 }
+/*all of this styles the buttons so that they look like arrows, using borders and shaping the button like a arrow.*/
 .left-arrow {
 	border-width: 10px 15px 10px 0;
 	border-color: transparent white transparent transparent;
@@ -280,6 +291,7 @@ button {
 	border-width: 10px 0 10px 15px;
 	border-color: transparent transparent transparent white;
 }
+/*changes color on hover*/
 .btn:hover .arrow {
 	border-color: transparent grey transparent transparent;
 }
@@ -288,24 +300,14 @@ button {
 }
 
 
-.learnmore-btn {
-	cursor: pointer;
-    padding: 10px;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: red;
-    transition: color 0.3s;
-}
-
-
+/*styles the main header of the page*/
 .main-header {
 	color: white;
 	margin-left: 10rem;
 	margin-bottom: 5rem;
 	margin-top: 10rem;
 }
-
+/*this styles all the main content, with also making it centered*/
 .main-content {
 	height: 100%;
 	display: flex;
@@ -318,11 +320,13 @@ button {
 	margin-left: 10rem;
 	margin-right: 10rem;
 }
+/*styles the main paragraph and makes it align to the left so that the photo can go to the right*/
 .main-paragraph {
     max-width: 60%;
     text-align: left;
     margin: 0;
 }
+/*same as above just for img*/
 .main-img {
     width: 45%;
     height: auto;
@@ -330,8 +334,22 @@ button {
     margin-left: 15rem;
     box-shadow: 10px 10px 5px grey;
 }
+/*this changes how bold the headers are for the slides, as i didnt like how bold the where.*/
 .container-header h1 { 
 	font-weight: 50;
+}
+/*adds some styling for the footer*/
+.footer {
+    background-color: #000000; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px; 
+    bottom: 0;
+    width: 90%;
+}
+/*changes the font that the footer uses*/
+.footer p {
+	font-family: kumar one;
 }
 
 
@@ -422,19 +440,6 @@ button {
 }
 
 
-.footer {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
-    text-align: center; /* Centered text */
-    padding: 20px; /* Some space inside the footer */
-    bottom: 0;
-    width: 90%;
-    font-family: Arial, sans-serif;
-}
-
-.footer p {
-	font-family: kumar one;
-}
 
 
 
