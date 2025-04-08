@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Auto Bodywork</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<!--This is a external stylesheet that allows me to use icons without using imgs, this speeds up load times. Boxicons-->
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--this imports the fonts that im using for styling my website-->
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kumar+One&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+
+	<!--this is the backdrop img-->
+<div class="backdrop-image">
+	<!--this is the gradient overlay that puts a gradient on the background imgs-->
+	<div class="gradient-overlay">
+		<!--this is some extra content i want on top of the gradient and backdrop, this displayed where i got the img from.-->
+			<p>Photo From: ajm.media.nz <i class="bx bxl-instagram"> </i> </p>
+    </div>
+</div>
+ <!--main title-->
+<div class="title">
+	<h1>AUTOMOTIVE<br>
+BODYWORK</h1>
+</div>
+
+<!--this contains everything inside the navbar-->	
+<div class="sidebar">
+         <!--this top div allows me to style the small title inside of the navbar.-->
+	  	<div class="top">	
+		  	<div class="logo">
+				<!--all i tags are icons used from boxicons website.-->
+				<i class="bx bxs-car-garage"></i>
+				<span>Auto Bodywork</span>
+			</div>
+			<!--the menu button-->
+			<div class="menu-toggle" onclick="toggleSidebar()">
+			<i class="bx bx-menu" id="sidebarButton"></i>
+			</div>
+        </div>
+		<ul>
+			<li>
+				<!--this is the one of the navbar buttons, this uses java script to funtion. this get repeated alot for all the navabr items.-->
+				<a href="index.html">
+					<i class="bx bxs-home-alt-2"></i>
+					<span class= "nav-item">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="products.html">
+					<i class="bx bx-list-ol"></i>
+					<span class= "nav-item">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bxs-wrench"></i>
+					<span class= "nav-item">Preperation</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bxs-spray-can"></i>
+					<span class= "nav-item">Primer</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bxs-droplet"></i>
+					<span class= "nav-item">Color/Final</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bxs-shield-alt-2"></i>
+					<span class= "nav-item">Finisher</span>
+				</a>
+
+			</li>
+		</ul>
+</div>
+	
+<!--this is where the "main" or middle content is displayed, this allows me to adjust this conatiner to display a img and text-->
+<div class="main">
+	<!--main header-->
+	<h1 class="main-header"> Products </h1>
+	<!--this class allows for me to style certain things inside this, without it effecting other website components and features-->
+    <div class="main-content">
+		<!--the main text-->
+    	<div class="main-paragraph">
+         	<h2>Why do it DIY?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus.</p>
+        </div>
+		<!--the main img with a given class that allows me to change certain dimentions if needed. has a alt tag-->
+        <img class="main-img" src="images/evo photo.jpg" alt="placeholder">
+    </div>
+</div>
+<!--This will be the container that holds that main website feature, the slides-->
+<div class="container">
+	<!-- header for the slides-->
+	<h1 class="container-header">Products needed</h1>
+          <!--	this is a class that allows the buttons to be conected with the slides, although cannot be inside the container otherwise the buttons move with the slides.	-->
+          <div class="slider-wrapper">
+                <!-- the buttons that allow the user to go to the next slide, with the java tag that allows the button to function-->
+                <button class="btn" onclick="prevSlide()">
+                    <div class="arrow left-arrow"></div>
+                </button>
+                <!-- the div class is white background that contains all the content that the slide with hold, this includes the header, paragraph and button of all the slides-->
+                <div class="slider-container">
+                    <div class="slides" id="slides">
+						<!--this div class conatins one of the slides content, for example, stage 1. this allows us to have diffrent content based on what slide we are on-->
+                        <div class="slide">
+							<!--this just displays whats inside of this slide, img and text. this gets repeated for how ever many pages the feature has.-->
+                            <div class="slide-content">
+                                <h2>Equipment</h2>
+                                <p> condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus</p>
+                            </div>
+                            <!--this is a image, with a alt tag-->
+                            <img src="images/sandingblockimg.jpeg" alt="Photo of sanding blocks on a table">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2>Location</h2>
+                                <p>condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpat ex at posuere dapibus. Suspendisse accumsan ac nisl ac elementum. Nunc rutrum molestie aliquet. Vivamus commodo sodales metus</p>
+                            </div>
+                            <img src="images/locationimg.jpg" alt="Photo of a MX5 that is sanded down and ready for first coat of paint primer">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2>Primer Paints</h2>
+                                <p>This stage will go over some preperation that you need before painting your car. this can include tasks like sanding all body panels, fixing rust and dents. </p>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+						<div class="slide">
+                            <div class="slide-content">
+                                <h2>Color Paints</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra pur</p>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+						<div class="slide">
+                            <div class="slide-content">
+                                <h2>Clearcoats/Finsher</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas ligula vulputate felis congue, quis fringilla purus luctus. Praesent mauris sapien, cursus vel mauris ut, elementum sollicitudin metus. Nullam turpis nisi, condimentum sit amet iaculis nec, lacinia sit amet orci. Nullam non mi iaculis, pharetra dui sed, posuere erat. Curabitur at lorem at ante interdum ullamcorper a nec erat. Cras pharetra purus ac arcu viverra aliquet. Aliquam venenatis felis et augue porttitor, quis suscipit lectus vulputate. Pellentesque eros enim, placerat dapibus tincidunt nec, dapibus eu mi. Ut rhoncus, odio non iaculis efficitur, nulla lorem tempor purus, nec tincidunt nulla lorem non velit. Aliquam cursus pulvinar dignissim. Vivamus volutpa</p>
+                            </div>
+                            <img src="https://via.placeholder.com/140" alt="Placeholder Image">
+                        </div>
+						
+                    </div>
+                </div>
+                <!--the other arrow that changes the slides-->
+                <button class="btn" onclick="nextSlide()">
+                    <div class="arrow right-arrow"></div>
+                </button>
+            </div>
+</div>
+	
+</body>
+</html>
